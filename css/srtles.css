@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: #111111;
+    background-color: #FAFAFA;;
 }
 
 a{
@@ -9,6 +10,26 @@ a{
 ul{
     list-style: none;
 }
+
+.section-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    /* 116.667% */
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+.section-title span{
+    color: #FD9222;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
 
 .header {}
 
@@ -132,4 +153,242 @@ ul{
     /* 128.571% */
     letter-spacing: -0.02em;
 
+}
+
+
+.taste {}
+
+.taste-title {}
+.taste-title span{}
+
+.taste-list {}
+
+.taste-item {}
+
+.taste-img {}
+
+.taste-subtitle {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+
+.made {}
+
+.made-title {}
+
+.made-img {}
+
+.made-subtitle {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.made-list {}
+
+.made-item {}
+
+.made-descr {
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    /* 128.571% */
+    letter-spacing: -0.02em;
+}
+
+
+.products {}
+
+.products-title {}
+
+.section-title {}
+
+.products-list {}
+
+.products-item {}
+
+.products-img {}
+
+.products-subtitle {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    /* 133.333% */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.products-descr {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    /* 116.667% */
+    letter-spacing: -0.02em;
+}
+
+.products-buy-btn {
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.sellers {}
+
+.sellers-title {}
+
+.sellers-list {}
+
+.sellers-item {}
+
+.sellers-img {}
+
+.sellers-subtitle {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    /* 133.333% */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+
+.loved {}
+
+.loved-title {}
+
+.loved-list {}
+
+.loved-item {}
+
+.loved-img {}
+
+.loved-subtitle {
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    /* 133.333% */
+}
+
+.loved-descr {
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    /* 128.571% */
+    letter-spacing: -0.02em;
+
+}
+
+.loved-review-btn {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+.loved-review-btn:focus, 
+.loved-review-btn:hover, 
+.loved-review-btn:active{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.footer {
+    background-color: #1E1823;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+}
+.footer-title span{
+    color: #FD9222;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    /* 121.429% */
+    letter-spacing: -0.03em;
+}
+
+.footer-social-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    /* 128.571% */
+}
+
+.footer-social-list {}
+
+.footer-social-item {}
+
+.footer-social-link {}
+
+.contacts-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    /* 128.571% */
+}
+
+.footer-address {}
+
+.footer-address-list {}
+
+.footer-address-item {}
+
+.footer-address-link{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    /* 128.571% */
+    letter-spacing: -0.02em;
+}
+
+.footer-navigation {}
+
+.footer-navigation-list {}
+
+.footer-navigation-item {}
+
+.footer-navigation-link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+.footer-navigation-link:focus,
+.footer-navigation-link:hover,
+.footer-navigation-link:active{
+    color:#FD9222;
 }
