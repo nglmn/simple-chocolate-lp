@@ -66,14 +66,13 @@ ul, ol{
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-container{
     display: flex;
     justify-content: space-between;
-    gap: 90px;
 }
 
 .header-navigation {
@@ -101,21 +100,18 @@ ul, ol{
     letter-spacing: -0.03em;
 }
 
-.header-logo-img {}
-
 .header-menu-list {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
-
-.header-menu-item {}
-
 .header-menu-link {
     color: #111;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    transition: color 300ms ease;
 }
 .header-menu-link:hover, 
 .header-menu-link:active, 
@@ -124,23 +120,49 @@ ul, ol{
 
 }
 
-.header-social {
+.header-social-list {
     display: flex;
     gap: 14px;
     justify-content: flex-end;
 }
 
-.header-social-list {}
+.header-social-item {
+    width: 40px;
+    height: 40px;
+}
 
-.header-social-link {}
+.header-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    transition: color 300ms ease, border-color 300ms ease;
+}
+.header-social-icon{
+    fill: currentColor;
+}
+.header-social-link:hover{
+    border-color: rgba(253, 146, 34, 0.1);
+    color: #FD9222;
+}
 
+ /* ============HERO============== */
 
 .hero {
     padding-bottom: 80px;
 }
 
 .hero-container{
-    background: rgba(17, 17, 17, 0.60);
+    background-color: rgba(17, 17, 17, 0.60);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
     padding: 381px 40px 40px 40px;
     border-radius: 30px;
 }
@@ -156,8 +178,9 @@ ul, ol{
     width: 100%;
     padding-bottom: 32px;
 }
-
-
+.hero-btns{
+    display: flex;
+}
 .hero-buy-btn {
     background-color: #FD9222;
     color: #FFFFFF;
@@ -167,6 +190,7 @@ ul, ol{
     padding: 14px 40px;
     border: 1px solid #FD9222;
     border-radius: 100px;
+    transition: color 300ms ease, background-color 300ms ease;
 
 }
 .hero-buy-btn:focus,
@@ -177,7 +201,7 @@ ul, ol{
 }
 
 .hero-made-btn {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color:#FFFFFF;
     font-size: 14px;
     font-weight: 600;
@@ -186,12 +210,14 @@ ul, ol{
     border: 1px solid #FFF;
     border-radius: 100px;
     margin-left: 14px;
+    transition: color 300ms ease, border-color 300ms ease;
 }
 .hero-made-btn:hover,
 .hero-made-btn:focus,
 .hero-made-btn:active{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color: #FD9222;
+    border-color: #FD9222;
 }
 
 .hero-scroll-btn {
@@ -202,7 +228,33 @@ ul, ol{
     /* 128.571% */
     letter-spacing: -0.03em;
     margin-left: 585px;
+    transition: color 300ms ease; 
+    display: flex;
+    gap: 14px;
+    align-items: center;
 }
+.hero-scroll-btn::after{
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url(../images/symbol-defs.svg#icon-instagram);
+    fill: #111111;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 300ms ease;
+}
+.hero-scroll-btn:hover, 
+.hero-scroll-btn:active, 
+.hero-scroll-btn:focus{
+    color: #FD9222;
+}
+.hero-scroll-btn:hover::after{
+    background-color: #FD9222;
+}
+
+ /* ============FEATURES============== */
 
 .features {
     background-color: #1E1823;
@@ -213,11 +265,24 @@ ul, ol{
 .features-list {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .features-item {
     width: calc((100% - 88px * 2) / 3);
+    position: relative;
+}
+.features-icon-wrap{
+    width: 62px;
+    height: 62px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-icon{
+    fill: #FD9222;
 }
 
 .features-subtitle {
@@ -236,7 +301,16 @@ ul, ol{
     line-height: 1.28;
     /* 128.571% */
     letter-spacing: -0.02em;
-
+}
+.features-item:not(:last-child):after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    right: -44px;
+    height: 124px;
+    background: rgba(255, 255, 255, 0.50);
 }
 
 
@@ -399,6 +473,9 @@ ul, ol{
 }
 
 
+
+ /* ============SELLERS============== */
+
 .sellers {
     padding-top: 120px;
 }
@@ -412,9 +489,9 @@ ul, ol{
     justify-content: space-between;
 }
 
-.sellers-item {}
-
-.sellers-img {}
+.sellers-item {
+    width: calc((100% - 16px * 2)/3);
+}
 
 .sellers-subtitle {
     color: #111;
@@ -428,12 +505,42 @@ ul, ol{
     padding-bottom: 28px;
     text-align: center;
     border-radius: 0px 0px 15px 15px;
-border-right: 1px solid rgba(17, 17, 17, 0.10);
-border-bottom: 1px solid rgba(17, 17, 17, 0.10);
-border-left: 1px solid rgba(17, 17, 17, 0.10);
-background: #FFF;
+    border-right: 1px solid rgba(17, 17, 17, 0.10);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+    border-left: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+}
+.sellert-img{
+  display: block;
+}
+.sellers-card-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.sellers-overlay-card {
+    padding: 40px 32px;
+        color: #F4F4FD;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        background-color: #4D5AE5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+}
+.sellers-item:hover .sellers-overlay-text{
+    transform: translateY(0%);
 }
 
+ /* ============LOVED============== */
 
 .loved {
     padding-top: 120px;
@@ -457,12 +564,15 @@ background: #FFF;
     background: #FFF;
     box-shadow: 0px 9.04932px 100px 0px rgba(17, 17, 17, 0.03);
     width: calc((100% - 28px * 2) / 3);
+    position: relative;
 }
-
-.loved-img {
-    position: absolute;
-    border-radius: 80px;
-}
+.loved-img{
+  border-radius: 50%;
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+}    
 
 .loved-subtitle {
     color: #111;
@@ -496,6 +606,7 @@ background: #FFF;
     line-height: normal;
     border-radius: 100px;
     border: 1px solid #FD9222;
+    transition: color 300ms ease, background-color 300ms ease;
 }
 .loved-review-btn:focus, 
 .loved-review-btn:hover, 
@@ -508,6 +619,8 @@ background: #FFF;
 }
 
 
+
+ /* ============FOOTER============== */
 
 .footer {
     background-color: #1E1823;
