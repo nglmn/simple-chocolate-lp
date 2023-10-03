@@ -517,22 +517,39 @@ ul, ol{
     position: relative;
     overflow: hidden;
     display: flex;
+    transition: transform 250ms ease-in-out;
 }
 .sellers-overlay-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 288px;
+    padding: 178px 40px;
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(165deg, rgba(253, 253, 255, 0.10) 3.97%, rgba(8, 2, 21, 0.00) 109.76%);
     color: #FAFAFA;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.28;
-    padding: 40px;
-    height: 100%;
+    /* 128.571% */
     letter-spacing: -0.02em;
+    position: absolute;
     top: 0;
     left: 0;
-    max-width: 288px;
-    opacity: 100%;
+    width: 100%;
+    height: 100%;    
+    /* transform: translateY(100%); */
+    opacity: 0%;
+}
+.sellers-item:hover .sellers-img{
+    filter: blur(4px);
+    overflow: hidden;
+    border-radius: 4px;
+    
 }
 .sellers-item:hover .sellers-overlay-text{
-    opacity: 0%;
+    opacity: 100%;
 }
 
  /* ============LOVED============== */
@@ -588,7 +605,6 @@ ul, ol{
     line-height: 1.28;
     /* 128.571% */
     letter-spacing: -0.02em;
-
 }
 
 .loved-review-btn {
@@ -668,11 +684,26 @@ ul, ol{
     /* 128.571% */
 }
 
-.footer-social-list {}
+.footer-social-list {
+    display: flex;
+    gap: 14px;
+}
 
-.footer-social-item {}
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+}
 
-.footer-social-link {}
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+.footer-social-icon{
+    padding: 8px;
+    fill:#FFFFFF;
+}
 
 .contacts-title {
     color: #FFF;
@@ -715,6 +746,7 @@ ul, ol{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    transition: color 300ms ease;
 }
 .footer-navigation-link:focus,
 .footer-navigation-link:hover,
