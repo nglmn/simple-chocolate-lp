@@ -517,6 +517,7 @@ ul, ol{
     position: relative;
     overflow: hidden;
     display: flex;
+    border-radius: 15px 15px 0px 0px;
     transition: transform 250ms ease-in-out;
 }
 .sellers-overlay-text {
@@ -526,7 +527,6 @@ ul, ol{
     text-align: center;
     width: 288px;
     padding: 178px 40px;
-    border-radius: 15px 15px 0px 0px;
     background: linear-gradient(165deg, rgba(253, 253, 255, 0.10) 3.97%, rgba(8, 2, 21, 0.00) 109.76%);
     color: #FAFAFA;
     font-size: 14px;
@@ -687,6 +687,7 @@ ul, ol{
 .footer-social-list {
     display: flex;
     gap: 14px;
+    justify-content: space-between;
 }
 
 .footer-social-item {
@@ -699,11 +700,19 @@ ul, ol{
     height: 100%;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 300ms ease;
+    color: #FFFFFF;
 }
 .footer-social-icon{
-    padding: 8px;
-    fill:#FFFFFF;
+    fill: currentColor;
 }
+.footer-social-link:hover{
+    color: #FD9222;
+}
+
 
 .contacts-title {
     color: #FFF;
