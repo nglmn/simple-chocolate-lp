@@ -590,6 +590,7 @@
 										target="_blank"
 										rel="noopener noreferrer"
 										class="footer-social-link"
+										aria-label="facebook"
 									>
 										<svg
 											class="footer-social-icon"
@@ -609,6 +610,7 @@
 										target="_blank"
 										rel="noopener noreferrer"
 										class="footer-social-link"
+										aria-label="instagram"
 									>
 										<svg
 											class="footer-social-icon"
@@ -628,6 +630,7 @@
 										target="_blank"
 										rel="noopener noreferrer"
 										class="footer-social-link"
+										aria-label="twitter"
 									>
 										<svg
 											class="footer-social-icon"
@@ -683,6 +686,115 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+			<div class="modal-background">
+				<div class="modal">
+					<button type="button" class="modal-close-btn">
+						<svg class="modal-close-icon" width="24" height="24">
+							<use
+								href="./images/symbol-defs.svg#icon-x-close"
+							></use>
+						</svg>
+					</button>
+					<p class="modal-title section-title">
+						LEAVE A REVIEW ABOUT <br /><span> OUR CHOCOLATE </span>
+					</p>
+					<form class="modal-form">
+						<div class="modal-form-input">
+							<label for="user-name" class="modal-form-label"
+								>Name</label
+							>
+							<div class="modal-input-wrapper">
+								<input
+									type="text"
+									id="user-name"
+									name="user-name"
+									class="user-input"
+								/>
+								<svg
+									class="input-user-icon"
+									width="24"
+									height="24"
+								>
+									<use
+										href="images/symbol-defs.svg#icon-modal-user"
+									></use>
+								</svg>
+							</div>
+						</div>
+						<div class="modal-form-input">
+							<label for="user-email" class="modal-form-label"
+								>Email</label
+							>
+							<div class="modal-input-wrapper">
+								<input
+									type="email"
+									id="user-email"
+									name="user-email"
+									class="user-input"
+								/>
+								<svg
+									class="input-user-icon"
+									width="24"
+									height="24"
+								>
+									<use
+										href="images/symbol-defs.svg#icon-mail"
+									></use>
+								</svg>
+							</div>
+						</div>
+						<div class="modal-form-input">
+							<label for="user-tel" class="modal-form-label"
+								>Phone number</label
+							>
+							<div class="modal-input-wrapper">
+								<input
+									type="tel"
+									id="user-tel"
+									name="user-tel"
+									class="user-input"
+								/>
+								<svg
+									class="input-user-icon"
+									width="24"
+									height="24"
+								>
+									<use
+										href="images/symbol-defs.svg#icon-phone"
+									></use>
+								</svg>
+							</div>
+						</div>
+						<div class="modal-form-comment">
+							<label for="user-comment" class="modal-form-label"
+								>Comment</label
+							>
+							<textarea
+								type="text"
+								id="user-comment"
+								name="user-comment"
+								class="user-comment"
+								placeholder="Enter text"
+								id="user-comment"
+							></textarea>
+						</div>
+						<div class="modal-terms">
+							<input
+								type="checkbox"
+								name="user-term"
+								id="user-term"
+								checked
+							/>
+							<label for="user-term" class="modal-user-label"
+								>I accept the terms and conditions of the
+								<span>Privacy Policy</span>
+								<svg class="modal-term-icon">
+									<use href=""></use></svg
+							></label>
+						</div>
+					</form>
+				</div>
 			</div>
 		</footer>
 	</body>
