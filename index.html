@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header class="header">
+		<!-- <header class="header">
 			<div class="container header-container">
 				<nav class="header-navigation">
 					<a href="#" class="header-logo">
@@ -100,9 +100,9 @@
 					</li>
 				</ul>
 			</div>
-		</header>
+		</header> -->
 		<main>
-			<section class="hero">
+			<!-- <section class="hero">
 				<div class="container hero-container">
 					<h1 class="hero-title">
 						Treat yourself or a loved one to <br />
@@ -116,7 +116,7 @@
 						<a href="#loved" class="hero-scroll-btn">Scroll down</a>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<section class="features">
 				<div class="container">
 					<h2 class="visually-hidden">Features</h2>
@@ -288,54 +288,58 @@
 						How it`s <span>made</span> ?
 					</h2>
 					<div class="made-wrap">
-						<img
-							src="./images/liquid-min.jpg"
-							alt="liquid"
-							width="600"
-							height="400"
-							class="made-img"
-						/>
-						<div class="made-text-container">
-							<h3 class="made-subtitle">
-								Try our chocolates today and discover the
-								perfect balance of flavor
-							</h3>
-							<ul class="made-list">
-								<li class="made-item">
-									<p class="made-descr">
-										Heat the milk in a saucepan without
-										bringing it to a boil. Add sugar and
-										cocoa powder.
-									</p>
-								</li>
-								<li class="made-item">
-									<p class="made-descr">
-										At the same time, prepare a water bath.
-										Melt the butter on it.
-									</p>
-								</li>
-								<li class="made-item">
-									<p class="made-descr">
-										"Mix" the milk mixture and already
-										liquid butter. Mix thoroughly with a
-										silicone spatula so that the mass
-										becomes uniform and silky.
-									</p>
-								</li>
-								<li class="made-item">
-									<p class="made-descr">
-										Heat the mixture over low heat, letting
-										it barely boil.
-									</p>
-								</li>
-								<li class="made-item">
-									<p class="made-descr">
-										Pour the chocolate into special
-										containers (can be replaced with ice
-										molds). Allow to cool and harden.
-									</p>
-								</li>
-							</ul>
+						<div class="made-div-item">
+							<img
+								src="./images/liquid-min.jpg"
+								alt="liquid"
+								width="600"
+								height="400"
+								class="made-img"
+							/>
+						</div>
+						<div class="made-div-item">
+							<div class="made-text-container">
+								<h3 class="made-subtitle">
+									Try our chocolates today and<br />discover
+									the perfect balance of flavor
+								</h3>
+								<ul class="made-list">
+									<li class="made-item">
+										<p class="made-descr">
+											Heat the milk in a saucepan without
+											bringing it to a boil. Add sugar and
+											cocoa powder.
+										</p>
+									</li>
+									<li class="made-item">
+										<p class="made-descr">
+											At the same time, prepare a water
+											bath. Melt the butter on it.
+										</p>
+									</li>
+									<li class="made-item">
+										<p class="made-descr">
+											"Mix" the milk mixture and already
+											liquid butter. Mix thoroughly with a
+											silicone spatula so that the mass
+											becomes uniform and silky.
+										</p>
+									</li>
+									<li class="made-item">
+										<p class="made-descr">
+											Heat the mixture over low heat,
+											letting it barely boil.
+										</p>
+									</li>
+									<li class="made-item">
+										<p class="made-descr">
+											Pour the chocolate into special
+											containers (can be replaced with ice
+											molds). Allow to cool and harden.
+										</p>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -574,7 +578,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<!-- <footer class="footer">
 			<div class="container">
 				<div class="footer-wrap">
 					<h2 class="footer-title">
@@ -705,127 +709,111 @@
 					</div>
 				</div>
 			</div>
-			<div class="modal-backdrop">
-				<div class="modal">
-					<button type="button" class="modal-close-btn">
-						<svg class="modal-close-icon" width="24" height="24">
-							<use
-								href="./images/symbol-defs.svg#icon-x-close"
-							></use>
-						</svg>
-					</button>
-					<p class="modal-title section-title">
-						LEAVE A REVIEW ABOUT <br /><span> OUR CHOCOLATE </span>
-					</p>
-					<form class="modal-form">
-						<div class="modal-form-input">
-							<label for="user-name" class="modal-form-label"
-								>Name</label
-							>
-							<div class="modal-input-wrapper">
-								<input
-									type="text"
-									id="user-name"
-									name="user-name"
-									class="user-input"
-								/>
-								<svg
-									class="input-user-icon"
-									width="24"
-									height="24"
-								>
-									<use
-										href="images/symbol-defs.svg#icon-modal-user"
-									></use>
-								</svg>
-							</div>
-						</div>
-						<div class="modal-form-input">
-							<label for="user-email" class="modal-form-label"
-								>Email</label
-							>
-							<div class="modal-input-wrapper">
-								<input
-									type="email"
-									id="user-email"
-									name="user-email"
-									class="user-input"
-								/>
-								<svg
-									class="input-user-icon"
-									width="24"
-									height="24"
-								>
-									<use
-										href="images/symbol-defs.svg#icon-mail"
-									></use>
-								</svg>
-							</div>
-						</div>
-						<div class="modal-form-input">
-							<label for="user-tel" class="modal-form-label"
-								>Phone number</label
-							>
-							<div class="modal-input-wrapper">
-								<input
-									type="tel"
-									id="user-tel"
-									name="user-tel"
-									class="user-input"
-								/>
-								<svg
-									class="input-user-icon"
-									width="24"
-									height="24"
-								>
-									<use
-										href="images/symbol-defs.svg#icon-phone"
-									></use>
-								</svg>
-							</div>
-						</div>
-						<div class="modal-form-comment">
-							<label for="user-comment" class="modal-form-label"
-								>Comment</label
-							>
-							<textarea
-								type="text"
-								id="user-comment"
-								name="user-comment"
-								class="user-comment"
-								placeholder="Enter text"
-								id="user-comment"
-							></textarea>
-						</div>
-						<div class="modal-terms">
+		</footer> -->
+		<!-- <div class="modal-backdrop">
+			<div class="modal">
+				<button type="button" class="modal-close-btn">
+					<svg class="modal-close-icon" width="24" height="24">
+						<use href="./images/symbol-defs.svg#icon-x-close"></use>
+					</svg>
+				</button>
+				<p class="modal-title section-title">
+					LEAVE A REVIEW ABOUT <br /><span> OUR CHOCOLATE </span>
+				</p>
+				<form class="modal-form">
+					<div class="modal-form-input">
+						<label for="user-name" class="modal-form-label"
+							>Name</label
+						>
+						<div class="modal-input-wrapper">
 							<input
-								type="checkbox"
-								class="modal-checkbox visually-hidden"
-								name="user-term"
-								id="user-term"
-								value="true"
-								required
+								type="text"
+								id="user-name"
+								name="user-name"
+								class="user-input"
 							/>
-							<label for="user-term" class="modal-user-label"
-								><span class="modal-checkbox-custom"
-									><svg
-										class="modal-term-icon"
-										width="10"
-										height="10"
-									>
-										<use
-											href="./images/symbol-defs.svg#icon-done"
-										></use></svg></span
-								>I accept the terms and conditions of the
-								<a class="modal-privacy-link">Privacy Policy</a>
-							</label>
+							<svg class="input-user-icon" width="24" height="24">
+								<use
+									href="images/symbol-defs.svg#icon-modal-user"
+								></use>
+							</svg>
 						</div>
-						<button type="submit" class="modal-submit-btn">
-							Send
-						</button>
-					</form>
-				</div>
+					</div>
+					<div class="modal-form-input">
+						<label for="user-email" class="modal-form-label"
+							>Email</label
+						>
+						<div class="modal-input-wrapper">
+							<input
+								type="email"
+								id="user-email"
+								name="user-email"
+								class="user-input"
+							/>
+							<svg class="input-user-icon" width="24" height="24">
+								<use
+									href="images/symbol-defs.svg#icon-mail"
+								></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal-form-input">
+						<label for="user-tel" class="modal-form-label"
+							>Phone number</label
+						>
+						<div class="modal-input-wrapper">
+							<input
+								type="tel"
+								id="user-tel"
+								name="user-tel"
+								class="user-input"
+							/>
+							<svg class="input-user-icon" width="24" height="24">
+								<use
+									href="images/symbol-defs.svg#icon-phone"
+								></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal-form-comment">
+						<label for="user-comment" class="modal-form-label"
+							>Comment</label
+						>
+						<textarea
+							type="text"
+							id="user-comment"
+							name="user-comment"
+							class="user-comment"
+							placeholder="Enter text"
+							id="user-comment"
+						></textarea>
+					</div>
+					<div class="modal-terms">
+						<input
+							type="checkbox"
+							class="modal-checkbox visually-hidden"
+							name="user-term"
+							id="user-term"
+							value="true"
+							required
+						/>
+						<label for="user-term" class="modal-user-label"
+							><span class="modal-checkbox-custom"
+								><svg
+									class="modal-term-icon"
+									width="10"
+									height="10"
+								>
+									<use
+										href="./images/symbol-defs.svg#icon-done"
+									></use></svg></span
+							>I accept the terms and conditions of the
+							<a class="modal-privacy-link">Privacy Policy</a>
+						</label>
+					</div>
+					<button type="submit" class="modal-submit-btn">Send</button>
+				</form>
 			</div>
-		</footer>
+		</div> -->
 	</body>
 </html>
