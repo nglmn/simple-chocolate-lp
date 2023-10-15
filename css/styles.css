@@ -669,35 +669,37 @@ ul, ol{
 
 .footer {
     background-color: #1E1823;
-    padding-bottom: 86px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .footer-wrap{
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .footer-links-wrap{
     display: flex;
-    gap: 50px;
-    padding-bottom: 54px;
+    flex-direction: column-reverse;
+    padding-bottom: 32px;
     
 }
 
 .footer-social-wrap, .footer-address-wrap{
     display: flex;
     flex-direction: column;
+    margin-top: 32px;
 }
 
 .footer-title {
     color: #FFF;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 34px;
-    line-height: 1.21;
-    letter-spacing: -0.03em;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
     width: 100%;
     max-width: 300px;
 }
@@ -715,13 +717,13 @@ ul, ol{
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28;
+    margin-bottom: 14px;
     /* 128.571% */
 }
 
 .footer-social-list {
     display: flex;
     gap: 14px;
-    justify-content: space-between;
 }
 
 .footer-social-item {
@@ -753,12 +755,17 @@ ul, ol{
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28;
+    margin-bottom: 14px;
     /* 128.571% */
 }
 
 .footer-address {}
 
-.footer-address-list {}
+.footer-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
 .footer-address-item {}
 
@@ -774,18 +781,19 @@ ul, ol{
 }
 .footer-nav-wrapper{
     display: flex;
-    gap: 358px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 24px;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
 }
 
 .footer-navigation {
 }
 
 .footer-navigation-list {
+    width: 124px;
     display: flex;
-    gap: 24px;
+    gap: 18px;
+    flex-direction: column;
 }
 
 .footer-navigation-item {}
@@ -805,12 +813,12 @@ ul, ol{
 }
 .footer-submit{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .footer-submit-input{
-    max-width: 313px;
-    height: 52px;
-    padding: 14px 24px;
+    width: 207px;
+    height: 45px;
+    padding: 14px 18px;
     border-radius: 30px;
     border: 1.5px solid rgba(255, 255, 255, 0.15);
     background-color: transparent;
@@ -818,7 +826,7 @@ ul, ol{
     transition: border-color 300ms ease;
 
     color: rgba(255, 255, 255, 0.30);
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -829,11 +837,10 @@ ul, ol{
 }
 
 .footer-submit-btn{
-    padding: 17px 40px;
+    padding: 14px 24px;
     border-radius: 100px;
     background-color: #FD9222;
     margin-left: 8px;
-
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -1042,7 +1049,7 @@ transition: fill 300ms ease;
 /* mobile */
 @media screen and (min-width: 375px){
     .container{
-        max-width: 366px;
+        max-width: 365px;
     }
 }
 
@@ -1052,7 +1059,6 @@ transition: fill 300ms ease;
 @media screen and (min-width: 768px){
     .container{
         max-width: 734px;
-        padding: 0;
     }
     .section-title {
         font-size: 24px;
@@ -1137,6 +1143,48 @@ transition: fill 300ms ease;
     }
     .loved-item{
         width: calc((100% - 16px) / 2);
+    }
+    .footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer-title {
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 34px;
+        line-height: 1.21;
+        letter-spacing: -0.02em;
+        width: 100%;
+        max-width: 300px;
+    }
+    .footer-wrap{
+        flex-direction: row;
+    }
+    .footer-links-wrap{
+        flex-direction: row;
+        padding-bottom: 50px;
+        gap: 40px;
+    }
+    .footer-social-wrap{
+        margin-top: 0;
+    }
+    .footer-address-wrap{
+        margin-top: 0;
+    }
+    .footer-nav-wrapper{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 24px;
+    }
+    .footer-navigation-list{
+        flex-direction: row;
+        gap: 16px;
+        width: auto;
+    }
+    .footer-submit-input{
+        width: 233px;
+        padding: 14px 24px;
     }
 }
 
@@ -1244,5 +1292,12 @@ transition: fill 300ms ease;
 
     .loved-item {
         width: calc((100% - 16px * 2) / 3);
+    }
+    .footer-nav-wrapper{
+        gap: 0;
+        justify-content: space-between;
+    }
+    .footer-submit-input{
+        width: 313px;
     }
 }
