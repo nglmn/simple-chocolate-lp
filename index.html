@@ -109,11 +109,28 @@
 						finest ingredients for a moment of pure delight!
 					</h1>
 					<div class="hero-btns">
-						<button type="button" class="hero-buy-btn">
-							Buy now
-						</button>
-						<a href="#made" class="hero-made-btn">How it`s made</a>
-						<a href="#loved" class="hero-scroll-btn">Scroll down</a>
+						<div class="hero-btns-wrap">
+							<button type="button" class="hero-buy-btn">
+								Buy now
+							</button>
+							<a href="#made" class="hero-made-btn"
+								>How it`s made</a
+							>
+						</div>
+						<a href="#loved" class="hero-scroll-link">
+							Scroll down
+							<div class="scroll-btn">
+								<svg
+									class="scroll-btn-icon"
+									width="10"
+									height="5"
+								>
+									<use
+										href="./images/symbol-defs.svg#icon-ptashka"
+									></use>
+								</svg>
+							</div>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -289,13 +306,32 @@
 					</h2>
 					<div class="made-wrap">
 						<div class="made-div-item">
-							<img
-								src="./images/liquid-min.jpg"
-								alt="liquid"
-								width="600"
-								height="400"
-								class="made-img"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/liquid-desk-1x-min.jpg 1x,
+										./images/liquid-desk-2x-min.jpg 2x
+									"
+									media="(min-width: 1166px)"
+									srcset="
+										./images/liquid-tab-1x-min.jpg 1x,
+										./images/liquid-tab-2x-min.jpg 2x
+									"
+									media="(min-width: 768px)"
+									srcset="
+										./images/liquid-mob-1x-min.jpg 1x,
+										./images/liquid-mob-2x-min.jpg 2x
+									"
+									media="(min-width: 375px)"
+								/>
+								<img
+									src="./images/liquid-min.jpg"
+									alt="liquid"
+									width="600"
+									height="400"
+									class="made-img"
+								/>
+							</picture>
 						</div>
 						<div class="made-div-item">
 							<div class="made-text-container">
