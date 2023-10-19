@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header-container">
 				<nav class="header-navigation">
 					<a href="#" class="header-logo">
@@ -99,8 +99,101 @@
 						></a>
 					</li>
 				</ul>
+				<button type="button" class="header-burger-btn">
+					<svg class="header-burger-icon" width="26" height="16">
+						<use
+							href="./images/symbol-defs.svg#icon-burger-menu"
+						></use>
+					</svg>
+				</button>
 			</div>
-		</header> -->
+			<div class="header-mob-menu is-open">
+				<div class="header-mob-container">
+					<button type="button" class="mob-close-btn">
+						<svg class="mob-close-icon" width="24" height="24">
+							<use
+								href="./images/symbol-defs.svg#icon-x-close"
+							></use>
+						</svg>
+					</button>
+					<div class="mob-links-wrapper">
+						<nav class="mob-header-navigation">
+							<ul class="header-mob-list">
+								<li class="header-mob-item">
+									<a
+										href="./index.html"
+										class="header-mob-link"
+										>Home</a
+									>
+								</li>
+								<li class="header-mob-item">
+									<a href="#made" class="header-mob-link"
+										>How it`s made?</a
+									>
+								</li>
+								<li class="header-mob-item">
+									<a href="#loved" class="header-mob-link"
+										>Chocolate is loved</a
+									>
+								</li>
+							</ul>
+						</nav>
+						<div class="mob-social-wrap">
+							<ul class="mob-social-list">
+								<li class="mob-social-item">
+									<a
+										href=""
+										target="_blank"
+										rel="noopener noreferrer"
+										class="mob-social-link"
+										><svg
+											class="mob-social-icon"
+											width="24"
+											height="24"
+										>
+											<use
+												href="./images/symbol-defs.svg#icon-facebook"
+											></use></svg
+									></a>
+								</li>
+								<li class="mob-social-item">
+									<a
+										href=""
+										target="_blank"
+										rel="noopener noreferrer"
+										class="mob-social-link"
+										><svg
+											class="mob-social-icon"
+											width="24"
+											height="24"
+										>
+											<use
+												href="./images/symbol-defs.svg#icon-instagram"
+											></use></svg
+									></a>
+								</li>
+								<li class="mob-social-item">
+									<a
+										href=""
+										target="_blank"
+										rel="noopener noreferrer"
+										class="mob-social-link"
+										><svg
+											class="mob-social-icon"
+											width="24"
+											height="24"
+										>
+											<use
+												href="./images/symbol-defs.svg#icon-twitter-1"
+											></use></svg
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 		<main>
 			<section class="hero">
 				<div class="container hero-container">
@@ -313,11 +406,15 @@
 										./images/liquid-desk-2x-min.jpg 2x
 									"
 									media="(min-width: 1166px)"
+								/>
+								<source
 									srcset="
 										./images/liquid-tab-1x-min.jpg 1x,
 										./images/liquid-tab-2x-min.jpg 2x
 									"
 									media="(min-width: 768px)"
+								/>
+								<source
 									srcset="
 										./images/liquid-mob-1x-min.jpg 1x,
 										./images/liquid-mob-2x-min.jpg 2x
@@ -325,7 +422,7 @@
 									media="(min-width: 375px)"
 								/>
 								<img
-									src="./images/liquid-min.jpg"
+									src="./images/liquid-desk-1x-min.jpg"
 									alt="liquid"
 									width="600"
 									height="400"
