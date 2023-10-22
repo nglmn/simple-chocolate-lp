@@ -174,90 +174,93 @@ ul, ol{
 .header-burger-btn:hover{
     fill: #FD9222;
 }
-.header-mob-menu{
-    background-color: #1E1823;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    /* opacity: 0;
-    visibility: hidden;
-    pointer-events: auto;
-    overflow: auto; */
-}
-.header-mob-container{
-    position: relative;
+
+.mob-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
 }
 
-.mob-close-btn{
-    position: absolute;
-    width: 28px;
-    height: 28px;
+.mob-menu {
+    position: fixed;
+    z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1823;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+.menu-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 88px;
+    width: 40px;
+    height: 40px;
+    border: none;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
-    padding: 0;
+    flex-shrink: 0;
 }
-.mob-close-icon{
-    stroke: #ECEDED ;
-    transition: stroke 300ms ease;
-}
-.mob-close-btn:hover .mob-close-icon, 
-.mob-close-btn:active .mob-close-icon, 
-.mob-close-btn:focus .mob-close-icon{
-    stroke:#FD9222;
+.close-btn-icon{
+    width: 100%;
+    height: 100%;
+    stroke: #FFFFFF;
 }
 
-.mob-header-navigation{
+.mob-menu-list {
+    margin-bottom: 50px;
+}
 
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
 }
-.header-mob-list{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.header-mob-link{
-    color: #FFF;
+
+.mob-menu-link {
+    color: #fff;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     /* 114.286% */
     letter-spacing: -0.02em;
-    
 }
-.header-mob-link:hover{
-    color: #FD9222;
-    transition: stroke 300ms ease;
-}
-.mob-social-list{
+
+
+.mob-soc {
     display: flex;
     gap: 14px;
+    margin-top: auto;
 }
-.mob-social-item{
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background-color: transparent;
+
+.mob-soc-item {
     width: 40px;
     height: 40px;
+}
+
+.mob-soc-link {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.mob-social-icon{
-    fill: #F4F4FD;
-}
-.mob-links-wrapper {
-    padding-top: 136px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.mob-soc-icon {
+    fill: #ffffff;
 }
 
 
@@ -568,8 +571,6 @@ ul, ol{
 .products-title {
     padding-bottom: 32px;
 }
-
-.section-title {}
 
 .products-list {
     display: flex;
@@ -890,15 +891,11 @@ ul, ol{
     /* 128.571% */
 }
 
-.footer-address {}
-
 .footer-address-list {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-
-.footer-address-item {}
 
 .footer-address-link{
     font-style: normal;
@@ -917,17 +914,12 @@ ul, ol{
     margin-top: 32px;
 }
 
-.footer-navigation {
-}
-
 .footer-navigation-list {
     width: 124px;
     display: flex;
     gap: 18px;
     flex-direction: column;
 }
-
-.footer-navigation-item {}
 
 .footer-navigation-link {
     color: #FFF;
@@ -1191,6 +1183,16 @@ transition: fill 300ms ease;
     .container{
         max-width: 734px;
     }
+    .header-burger-btn{
+        display: none;
+    }
+    .header-menu-list{
+        display: flex;
+        margin-left: 47px;
+    }
+    .header-social-list{
+        display: flex;
+    }
     .section-title {
         font-size: 24px;
     }
@@ -1353,6 +1355,11 @@ transition: fill 300ms ease;
         width: 233px;
         padding: 14px 24px;
     }
+    .mob-menu.is-open {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: auto;
+    }
 }
 
 
@@ -1360,6 +1367,9 @@ transition: fill 300ms ease;
 @media screen and (min-width: 1200px){
     .container{
         max-width: 1166px;
+    }
+    .header-menu-list{
+        margin-left: 365px;
     }
     .section-title {
         font-size: 24px;

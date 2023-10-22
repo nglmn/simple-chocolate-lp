@@ -107,91 +107,69 @@
 					</svg>
 				</button>
 			</div>
-			<div class="header-mob-menu is-open">
-				<div class="header-mob-container">
-					<button type="button" class="mob-close-btn">
-						<svg class="mob-close-icon" width="24" height="24">
-							<use
-								href="./images/symbol-defs.svg#icon-x-close"
-							></use>
-						</svg>
-					</button>
-					<div class="mob-links-wrapper">
-						<nav class="mob-header-navigation">
-							<ul class="header-mob-list">
-								<li class="header-mob-item">
-									<a
-										href="./index.html"
-										class="header-mob-link"
-										>Home</a
-									>
-								</li>
-								<li class="header-mob-item">
-									<a href="#made" class="header-mob-link"
-										>How it`s made?</a
-									>
-								</li>
-								<li class="header-mob-item">
-									<a href="#loved" class="header-mob-link"
-										>Chocolate is loved</a
-									>
-								</li>
-							</ul>
-						</nav>
-						<div class="mob-social-wrap">
-							<ul class="mob-social-list">
-								<li class="mob-social-item">
-									<a
-										href=""
-										target="_blank"
-										rel="noopener noreferrer"
-										class="mob-social-link"
-										><svg
-											class="mob-social-icon"
-											width="24"
-											height="24"
-										>
-											<use
-												href="./images/symbol-defs.svg#icon-facebook"
-											></use></svg
-									></a>
-								</li>
-								<li class="mob-social-item">
-									<a
-										href=""
-										target="_blank"
-										rel="noopener noreferrer"
-										class="mob-social-link"
-										><svg
-											class="mob-social-icon"
-											width="24"
-											height="24"
-										>
-											<use
-												href="./images/symbol-defs.svg#icon-instagram"
-											></use></svg
-									></a>
-								</li>
-								<li class="mob-social-item">
-									<a
-										href=""
-										target="_blank"
-										rel="noopener noreferrer"
-										class="mob-social-link"
-										><svg
-											class="mob-social-icon"
-											width="24"
-											height="24"
-										>
-											<use
-												href="./images/symbol-defs.svg#icon-twitter-1"
-											></use></svg
-									></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+			<div class="mob-menu">
+				<button type="button" class="menu-close-btn">
+					<svg class="close-btn-icon" width="12" height="12">
+						<use href="./images/symbol-defs.svg#icon-x-close"></use>
+					</svg>
+				</button>
+				<ul class="mob-menu-list list">
+					<li class="mob-menu-item">
+						<a class="mob-menu-link link" href="">Home</a>
+					</li>
+					<li class="mob-menu-item">
+						<a class="mob-menu-link link" href="#made"
+							>How it`s made?</a
+						>
+					</li>
+					<li class="mob-menu-item">
+						<a class="mob-menu-link link" href="#loved"
+							>Chocolate is loved</a
+						>
+					</li>
+				</ul>
+
+				<ul class="mob-soc list">
+					<li class="mob-soc-item">
+						<a
+							class="mob-soc-link link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="instagram"
+						>
+							<svg class="mob-soc-icon" width="24" height="24">
+								<use
+									href="./images/symbol-defs.svg#icon-instagram"
+								></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mob-soc-item">
+						<a
+							class="mob-soc-link link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							><svg class="mob-soc-icon" width="24" height="24">
+								<use
+									href="./images/symbol-defs.svg#icon-facebook"
+								></use></svg
+						></a>
+					</li>
+					<li class="mob-soc-item">
+						<a
+							class="mob-soc-link link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							><svg class="mob-soc-icon" width="24" height="24">
+								<use
+									href="./images/symbol-defs.svg#icon-twitter-1"
+								></use></svg
+						></a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main>
@@ -843,7 +821,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- <div class="modal-backdrop">
+		<div class="modal-backdrop">
 			<div class="modal">
 				<button type="button" class="modal-close-btn">
 					<svg class="modal-close-icon" width="24" height="24">
@@ -947,6 +925,6 @@
 					<button type="submit" class="modal-submit-btn">Send</button>
 				</form>
 			</div>
-		</div> -->
+		</div>
 	</body>
 </html>
