@@ -998,11 +998,11 @@ ul, ol{
 }
  .modal{
     position: relative;
-    width: 517px;
+    width: 311px;
     min-height: 794px;
     border-radius: 15px;
     background: #FAFAFA;
-    padding: 40px;
+    padding: 32px 24px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1033,46 +1033,58 @@ ul, ol{
     stroke:#FD9222;
 }
 .modal-title{
-text-align: left;
+    max-width: 255px;
+    color: #111;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+.modal-title span{
+    color:#FD9222;
+
 }
 .modal-form{
-margin-top: 40px;
+    margin-top: 32px;
 }
 .modal-form-input{
-display: flex;
-flex-direction: column;
-gap: 8px;
-margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
 }
 .modal-form-label{
-color: rgba(64, 64, 64, 0.30);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02em;
 }
 .modal-input-wrapper{
 position: relative;
 }
 
 .user-input{
-width: 100%;
-height: 68px;
-border-radius: 13px;
-border: 1.5px solid rgba(17, 17, 17, 0.05);
-padding: 22px 62px 22px 62px;
-background-color: transparent;
-outline: none;
-transition: border 300ms ease;
+    width: 100%;
+    height: 68px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    padding: 22px 62px 22px 62px;
+    background-color: transparent;
+    outline: none;
+    transition: border 300ms ease;
 }
 .input-user-icon {
-top: 50%;
-left: 24px;
-position: absolute;
-transform: translateY(-50%);
-fill: #404040;
-transition: fill 300ms ease;
+    top: 50%;
+    left: 24px;
+    position: absolute;
+    transform: translateY(-50%);
+    fill: #404040;
+    transition: fill 300ms ease;
 }
 .user-input:active,
 .user-input:focus{
@@ -1360,6 +1372,17 @@ transition: fill 300ms ease;
         visibility: hidden;
         pointer-events: auto;
     }
+    .modal{
+        width: 517px;
+        padding: 40px;
+    }
+    .modal-title{
+        font-size: 24px;
+        max-width: 298px;
+    }
+    .modal-form{
+        margin-top: 40px;
+    }
 }
 
 
@@ -1490,5 +1513,8 @@ transition: fill 300ms ease;
     }
     .footer-submit-input{
         width: 313px;
+    }
+    .modal{
+        width: 517px;
     }
 }
